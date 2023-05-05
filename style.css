@@ -25,13 +25,6 @@ body {
 .fixed img {
     width: 60px;
 }
-.text_header {
-    background-image: linear-gradient(40deg,yellow,blue,yellow);
-    background-size: 300% 100%;
-    animation: text_gradiente 9s linear infinite alternate;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 @keyframes text_gradiente {
     0% {
         background-position-x: 0%;
@@ -150,11 +143,162 @@ p {
     background-size: cover;
 }
 .frente4 {
-    background-image: url();
+    background-image: url(functionarrowumparametro.png);
+    background-size: cover;
+}
+.frente5 {
+    background-image: url(functionarrowsemparametro.png);
+    background-size: cover;
 }
 
 .functions {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.text_c {
+    color: white;
+}
+.party_c img {
+    width: 50vw;
+}
+.party_c {
+    display: flex;
+}
+.functionc {
+    display: flex;
+    justify-content: space-around;
+}
+.containerc {
+    position: relative;
+    width: 510px;
+    height: 320px;
+}
+.flipc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+.containerc:hover .flipc {
+    transform: rotateY(180deg);
+}
+.design_card_c {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 4px 10px black;
+    backface-visibility: hidden;
+}
+.trasc {
+    background-color: rgb(88, 88, 255);
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 9px;
+}
+.frentec1 {
+    background-image: url(intmainc.png);
+    background-size: cover;
+}
+.frentec2 {
+    background-image: url(voidmainc.png);
+    background-size: cover;
+}
+.frentec3 {
+    background-image: url(intargcargv.png);
+    background-size: cover;
+}
+.iframe_js {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iframe_c {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe {
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    font-size: 90px;
+}
+.title_js {
+    background-image: linear-gradient(40deg,yellow,rgb(238, 238, 62),rgb(175, 175, 12),rgb(102, 102, 102),yellow);
+    -webkit-background-clip: text;
+    background-size: 300% 100%;
+    -webkit-text-fill-color: transparent;
+    animation: titlejs_gradiente 9s linear infinite alternate;
+}
+@keyframes titlejs_gradiente {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 300%;
+    }
+}
+.title_c {
+    background-image: linear-gradient(40deg,rgb(102, 102, 238),rgb(74, 74, 248),blue,rgb(161, 161, 224),white,rgb(102, 102, 238));
+    -webkit-background-clip: text;
+    background-size: 300% 100%;
+    -webkit-text-fill-color: transparent;
+    animation: titlec_gradiente 9s linear infinite alternate;
+}
+@keyframes titlec_gradiente {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 300%;
+    }
+}
+.party_c img{
+    border-radius: 10px;
+    transition: .5s;
+}
+.party_c img:hover {
+    transform: scale(1.1);
+}
+a {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.copy {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgb(102, 102, 247);
+    padding: 30px;
+    transition: .5s;
+    animation: shadow_gra 6s linear infinite ;
+    width: 60vw;
+}
+@keyframes shadow_gra {
+    0% {
+        box-shadow: 0px 0px 10px rgb(78, 78, 228);
+    }
+    25% {
+        box-shadow: 0px 0px 10px rgb(32, 32, 235);
+    }
+    50% {
+        box-shadow: 0px 0px 10px blue;
+    }
+    75% {
+        box-shadow: 0px 0px 10px rgb(32, 32, 235);
+    }
+    100% {
+        box-shadow: 0px 0px 10px rgb(78, 78, 228);
+    }
 }

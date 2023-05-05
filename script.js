@@ -10,3 +10,4 @@ function slider(){
 }
 setInterval(slider, 4000)
 
+
