@@ -1,0 +1,160 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+header {
+    background-attachment: fixed;
+}
+header h1 {
+    font-size: 30px;
+    padding: 21px;
+}
+body {
+    background-color: rgb(43, 42, 42);
+}
+.fixed {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    background-color: white;
+}
+.fixed img {
+    width: 60px;
+}
+.text_header {
+    background-image: linear-gradient(40deg,yellow,blue,yellow);
+    background-size: 300% 100%;
+    animation: text_gradiente 9s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes text_gradiente {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 300%;
+    }
+}
+.carrossel_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrossel {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.box_images {
+    transform: translateX(0);
+    display: flex;
+    transition: 0.7s ease-in-out;
+    width: 100vw;
+}
+.box_images img {
+    max-width: 100vw;
+    min-width: 100vw;
+    height: 100vh;
+}
+.js_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.js_main p {
+    color: white;
+}
+.party_js1{
+    display: flex;
+
+} 
+.party_js1 img {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.party_js1 img:hover {
+    transform: scale(1.1);
+}
+.text_js1 {
+    width: 100%;
+    height: 100%;
+}
+iframe {
+    width: 90vw;
+    height: 900px;
+    z-index: 3;
+}
+main h1 {
+    color: white;
+}
+main * {
+    margin: 10px;
+}
+li {
+    color: yellow;
+    font-size: 15px;
+}
+p {
+    font-size: 21px;
+}
+.container {
+    position: relative;
+    width: 420px;
+    height: 260px;
+}
+.flip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+.container:hover .flip {
+    transform: rotateY(180deg);
+}
+.design_card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 4px 10px black;
+    backface-visibility: hidden;
+}
+.frente1 {
+    background-image: url(functiondeclaration.png);
+    background-size: cover;
+}
+.tras {
+    background-color: yellow;
+    transform: rotateY(180deg);
+}
+.tras p {
+    color: black;
+}
+.frente2 {
+    background-image: url(functionexpression.png);
+    background-size: cover;
+}
+
+.frente3 {
+    background-image: url(functionarrowmaisdeum.png);
+    background-size: cover;
+}
+.frente4 {
+    background-image: url();
+}
+
+.functions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
